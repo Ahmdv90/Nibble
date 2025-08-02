@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { Key, KeyRound, Mail, User } from 'lucide-react';
-import API from '../../../lib/axios';
+import API from '../../axios';
 import Button from '../components/UI/Button';
 
 export default function SignUP() {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import API from '../../../../lib/axios';
+import API from '../../../axios';
 import Button from '../../components/UI/Button';
 
 export default function VerifyCode() {

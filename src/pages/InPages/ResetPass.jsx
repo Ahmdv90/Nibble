@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Button from '../../components/UI/Button';
-import API from '../../../../lib/axios';
+import API from '../../../axios';
 import { KeyRound } from 'lucide-react';
 
 export default function ResetPassword() {
