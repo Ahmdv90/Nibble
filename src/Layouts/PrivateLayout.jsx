@@ -9,17 +9,11 @@ export default function PrivateLayout() {
     const location =  useLocation()
 
     useEffect(() => {
-        const token = localStorage.getItem('token')
+      let token = localStorage.getItem("__token_")
         if (!token) {
-            navigate('/')
+            return navigate('/')
         }
     }, [location])
-
-    const isAuthenticated = localStorage.getItem('token') !== null;
-
-    if (!isAuthenticated) {
-        return <Navigate to="/login" replace />;
-    }
   return (
     <div className='flex font-sans overflow-hidden'>
         <Sidebar />

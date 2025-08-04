@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { KeyRound, Mail } from 'lucide-react';
-import API from '../../axios';
+import API from '../../axios/index';
 import Button from '../components/UI/Button';
 
 export default function Login() {
   const navigate = useNavigate();
 
+  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
