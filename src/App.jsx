@@ -15,6 +15,9 @@ import MainLayout from './Layouts/MainLayout';
 import PrivateLayout from './Layouts/PrivateLayout';
 import AdminLayout from './Layouts/AdminLayout';
 import AdminPage from './pages/AdminPanel/AdminPage';
+import Restorants from './pages/AdminPanel/Panels/Restorants';
+import Categories from './pages/AdminPanel/Panels/Categories';
+import Products from './pages/AdminPanel/Panels/Products';
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(localStorage.getItem('__token_'));
@@ -46,6 +49,9 @@ export default function App() {
       </Route>
       <Route  element={<AdminLayout />}>
         <Route path='/Admin' element={<AdminPage />}/>
+        <Route path='/Admin/restorants' element={<Restorants />}/>
+        <Route path='/Admin/categories' element={<Categories/>}/>
+        <Route path='/Admin/products' element={<Products />}/>
       </Route>
     </Routes>
   );

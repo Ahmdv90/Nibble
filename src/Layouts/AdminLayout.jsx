@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import { Navigate, Outlet, useLocation, useNavigate } from 'react-router'
 import axios from 'axios';
+import AdminDashboard from '../pages/AdminPanel/AdminDashboard';
 export default function AdminLayout() {
     const navigate = useNavigate()
     const location =  useLocation()
@@ -19,8 +20,10 @@ export default function AdminLayout() {
             }
     })
     }, [location])
-    const isAuthenticated = localStorage.getItem('token');
   return (
-    <Outlet/>
+    <div className="admin flex">
+      <AdminDashboard />
+      <Outlet/>
+    </div>
   )
 }
