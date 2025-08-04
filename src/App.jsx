@@ -13,13 +13,15 @@ import Favorite from './pages/Favorite';
 import Orders from './pages/Orders';
 import MainLayout from './Layouts/MainLayout';
 import PrivateLayout from './Layouts/PrivateLayout';
+import AdminLayout from './Layouts/AdminLayout';
+import AdminPage from './pages/AdminPanel/AdminPage';
 
 export default function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('__token_'));
+  const [isAuthenticated, setIsAuthenticated] = useState(localStorage.getItem('__token_'));
 
   useEffect(() => {
     const handleStorage = () => {
-      setIsAuthenticated(!!localStorage.getItem('__token_'));
+      setIsAuthenticated(localStorage.getItem('__token_'));
     };
     window.addEventListener('storage', handleStorage);
     return () => window.removeEventListener('storage', handleStorage);
@@ -28,19 +30,22 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/login" replace />} />
-      <Route element={<MainLayout />}>
+      <Route element={<MainLayout/>}>
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login />}/>
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/verify-code" element={<VerifyCode />} />
         <Route path="/reset-password" element={<ResetPass />} />
       </Route>
-      <Route element={<PrivateLayout isAuthenticated={isAuthenticated} />}>
+      <Route element={<PrivateLayout />}>
         <Route path="/home" element={<Home />} />
         <Route path="/messages" element={<Message />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/favorites" element={<Favorite />} />
         <Route path="/orders" element={<Orders />} />
+      </Route>
+      <Route  element={<AdminLayout />}>
+        <Route path='/Admin' element={<AdminPage />}/>
       </Route>
     </Routes>
   );
