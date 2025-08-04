@@ -17,7 +17,7 @@ export default function ForgotPassword() {
       const response = await API.post('/auth/password-reset/request/', { email });
 
       if (response.status === 200) {
-        setShowModal(true); // Показываем модалку
+        setShowModal(true); 
       }
     } catch (error) {
       console.error('Password reset request error:', error);
@@ -26,7 +26,6 @@ export default function ForgotPassword() {
   };
 
   const handleGotIt = () => {
-    // Просто переходим на страницу ввода кода, не отправляя повторно запрос
     navigate('/verify-code', { state: { email } });
   };
 
