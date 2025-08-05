@@ -1,0 +1,20 @@
+[
+        {
+            "id": 1,
+            "name": "Spicy Na Thai Town",
+            "img": "https://i3.imageban.ru/out/2025/08/05/0e7de551fee64370d37dbb896494a989.png",
+            "delivery_fee": 0
+        },
+        {
+            "id": 2,
+            "name": "Spicy Na Thai Town",
+            "img": "https://i3.imageban.ru/out/2025/08/05/924cd0260c9ffbc09b09fc3457a25551.png",
+            "delivery_fee": 1.99
+        },
+        {
+            "id": 3,
+            "name": "Pot Chicken Adobo",
+            "img": "https://i6.imageban.ru/out/2025/08/05/68a638413f09fc3c1085f36c962cf6e7.png",
+            "delivery_fee": 0
+        }
+]

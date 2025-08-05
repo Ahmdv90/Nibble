@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Burger King",
+    "rating": 4.8,
+    "reviews": 1873,
+    "category": "Burger",
+    "price": "$",
+    "delivery": "Free delivery",
+    "distance_km": 4.3,
+    "promo": null,
+    "logo": "./Logotypes/BurgerKing.png"
+  },
+  {
+    "id": 2,
+    "name": "Carrows Restaurant",
+    "rating": 4.7,
+    "reviews": 91,
+    "category": "Fish",
+    "price": "$$$",
+    "delivery": "Free delivery",
+    "distance_km": 0.3,
+    "promo": null,
+    "logo": "./Logotypes/Carrows.png"
+  },
+  {
+    "id": 3,
+    "name": "KFC",
+    "rating": 4.4,
+    "reviews": 2583,
+    "category": "Chicken",
+    "price": "$",
+    "delivery": "Buy 2 get 1 free",
+    "distance_km": 18.6,
+    "promo": "Buy 2 get 1 free",
+    "logo": "./Logotypes/kfc.png"
+  },
+  {
+    "id": 4,
+    "name": "Domino's Pizza",
+    "rating": 5.0,
+    "reviews": 736,
+    "category": "Pizza",
+    "price": "$$",
+    "delivery": "Buy 1 get 1 free",
+    "distance_km": 2.8,
+    "promo": "Buy 1 get 1 free",
+    "logo": "/Logotypes/dominos.png"
+  },
+  {
+    "id": 5,
+    "name": "McDonald's",
+    "rating": 4.1,
+    "reviews": 20359,
+    "category": "Burger",
+    "price": "$",
+    "delivery": "$0.99 Delivery",
+    "distance_km": 9.0,
+    "promo": "$0.99 Delivery",
+    "logo": "/Logotypes/mcdonalds.png"
+  },
+  {
+    "id": 6,
+    "name": "Pizza Hut",
+    "rating": 4.6,
+    "reviews": 24,
+    "category": "Pizza",
+    "price": "$",
+    "delivery": "Free delivery",
+    "distance_km": 3.4,
+    "promo": null,
+    "logo": "/Logotypes/pizzahut.png"
+  },
+  {
+    "id": 7,
+    "name": "Subway",
+    "rating": 4.2,
+    "reviews": 1345,
+    "category": "Sandwich",
+    "price": "$",
+    "delivery": "Free delivery",
+    "distance_km": 1.2,
+    "promo": null,
+    "logo": "/Logotypes/subway.png"
+  },
+  {
+    "id": 8,
+    "name": "Panda Express",
+    "rating": 4.0,
+    "reviews": 975,
+    "category": "Asian",
+    "price": "$$",
+    "delivery": "$1.50 Delivery",
+    "distance_km": 5.1,
+    "promo": "$1.50 Delivery",
+    "logo": "/Logotypes/pandaexpress.png"
+  },
+  {
+    "id": 9,
+    "name": "Taco Bell",
+    "rating": 3.9,
+    "reviews": 890,
+    "category": "Mexican",
+    "price": "$",
+    "delivery": "Free delivery",
+    "distance_km": 7.5,
+    "promo": null,
+    "logo": "/Logotypes/tacobell.png"
+  },
+  {
+    "id": 10,
+    "name": "Wendy's",
+    "rating": 4.3,
+    "reviews": 1123,
+    "category": "Burger",
+    "price": "$$",
+    "delivery": "Buy 1 get 1 free",
+    "distance_km": 6.7,
+    "promo": "Buy 1 get 1 free",
+    "logo": "/Logotypes/wendys.png"
+  }
+]

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import API from '../../../axios';
+import API from '../../../axios/index';
 import Button from '../../components/UI/Button';
 
 export default function ForgotPassword() {

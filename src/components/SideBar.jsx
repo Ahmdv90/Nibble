@@ -16,14 +16,10 @@ const menuItems = [
 export default function Sidebar() {
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    navigate('/');
-  };
-
   const userName = localStorage.getItem('userName') || 'Mark Clarke';
 
   return (
-    <div className="w-[304px] h-screen bg-[#F7F7F7] shadow-lg text-white flex flex-col p-6 font-montserrat rounded-r-[30px]">
+    <div className="w-[304px] h-min-screen bg-[#F7F7F7] shadow-lg text-white flex flex-col p-6 font-montserrat rounded-r-[30px]">
         <img className='w-30  0 h-10' src="./Logo.svg" alt="" />
       <nav className="flex mt-10 flex-col gap-3 flex-1">
         {menuItems.map((item) => (
@@ -31,7 +27,7 @@ export default function Sidebar() {
             key={item.path}
             to={item.path}
             className={({ isActive }) =>
-              `flex w-full h-12 items-center gap-3 text-sm px-4 py-1 mt-[-15px] rounded-[12px] hover:bg-[#503E9D]/10 transition ${
+              `flex w-full h-12 items-center gap-3 text-sm px-4 py-1 mt-[10px] rounded-[12px] hover:bg-[#503E9D]/10 transition ${
                 isActive ? 'bg-[#503E9D] ' : 'text-gray-700'
               }`
             }
