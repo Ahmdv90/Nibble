@@ -16,9 +16,7 @@ export default function AdminLayout() {
         }).then(res=>{
             adminToken = res.data.token_key
             if(adminToken != token){
-                return navigate('/admin', {
-                    state: { from: location.pathname }
-                })
+                return navigate('/home')
             }
     })
     }, [location])
