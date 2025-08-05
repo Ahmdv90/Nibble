@@ -8,7 +8,7 @@ export default function AdminLayout() {
     const location =  useLocation()
 
     useEffect(() => {
-        let token = localStorage.getItem("__token__")
+        let token = localStorage.getItem("__token_")
         let adminToken = "1"
         axios.post("https://movie.pythonanywhere.com/api/v1/auth/login/",{
             email:"hadzhi@gmail.com",
