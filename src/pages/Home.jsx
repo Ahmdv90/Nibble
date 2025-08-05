@@ -13,6 +13,7 @@ const categories = [
   {id : 6, name: 'Nearest', description: '44+ options', icon: <div className='bg-[#FACD5D] w-[48px] h-[48px] rounded-lg text-[white] flex items-center justify-center'><Map /></div>},
 ]
 
+
 export default function Home() {
   const [showAll, setShowAll] = useState(false);
 
