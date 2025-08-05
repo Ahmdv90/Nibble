@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react';
 import Button from './../components/UI/Button';
 import { Banknote, Bike, Flame, Map, Store, Utensils, Wallet,Moon } from 'lucide-react';
 import restaurants from '../MockData/restaurant.json'; 
